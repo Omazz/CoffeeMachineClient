@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CoffeeMachine</class>
+ <widget class="QMainWindow" name="CoffeeMachine">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>435</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CoffeeMachine</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="checkBoxSugar">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(0, 0, 255)</string>
+        </property>
+        <property name="text">
+         <string>Sugar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBoxMilk">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(0, 0, 255)</string>
+        </property>
+        <property name="text">
+         <string>Milk</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBoxCinnamon">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(0, 0, 255)</string>
+        </property>
+        <property name="text">
+         <string>Cinnamon</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="radioButtonCaramel">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Caramel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonStrawnerry">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Strawberry</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonBanana">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Banana</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonGrape">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Grape</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonVanila">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Vanila</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonTangerine">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Tangerine</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonWithoutSyrup">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 85, 0)</string>
+        </property>
+        <property name="text">
+         <string>Without syrup</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButtonCheckCost">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(120, 120, 120)</string>
+      </property>
+      <property name="text">
+       <string>Check cost</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButtonBuy">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(120, 120, 120)</string>
+      </property>
+      <property name="text">
+       <string>Buy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <widget class="QGroupBox" name="groupBoxDrinks">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="radioButtonCapuccino">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Capuccino</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonEspresso">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Espresso</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonAmericano">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Americano</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonDoubleEspresso">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Double espresso</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonFlatwhite">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Flatwhite</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonHotChocolate">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Hot chocolate</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonCacao">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Cacao</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonLatte">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(170, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>Latte</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>330</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
