@@ -111,10 +111,9 @@ void CoffeeMachine:: readDatagram()
         QStringList stringList = data.split(";");
         if(stringList.at(0) == BUY_COMMAND_HEADER) {
             if(stringList.at(1) == "SUCCESS") {
-                QMessageBox::information(this, "Result of request", "!!!Order is accepted");
+                QMessageBox::information(this, "Result of request", "&&&Order is accepted");
             } else if(stringList.at(1) == "FAILURE") {
-
-                QMessageBox::information(this, "Result of request", "!!!Order is denied");
+                QMessageBox::information(this, "Result of request", "&&&Order is denied");
             }
         } else if(stringList.at(0) == CHECK_COMMAND_HEADER) {
             QString result = "Total cost is " + stringList.at(1);
