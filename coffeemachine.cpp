@@ -108,7 +108,6 @@ void CoffeeMachine:: readDatagram()
         datagram.resize(socket->pendingDatagramSize());
         socket->readDatagram(datagram.data(), datagram.size(), &sender, &senderPort);
         QString data = datagram.data();
-        qDebug() << data;
         QStringList stringList = data.split(";");
         if(stringList.at(0) == BUY_COMMAND_HEADER) {
             if(stringList.at(1) == "SUCCESS") {
@@ -117,8 +116,6 @@ void CoffeeMachine:: readDatagram()
                 QMessageBox::warning(this, "Result of request", "Order is denied");
             }
         } else if(stringList.at(0) == CHECK_COMMAND_HEADER) {
-            //QString result = "Total cost is " + stringList.at(1);
-            //QMessageBox::information(this, "Result of request", result);
             QMessageBox::StandardButton button = QMessageBox::question(this, "",
                                                                        "Total cost is " + stringList.at(1) + "\nDo you want to buy?",
                                                                        QMessageBox::Yes | QMessageBox::No );
