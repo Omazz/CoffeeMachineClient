@@ -20,6 +20,8 @@ public slots:
 private slots:
     void on_pushButtonBuy_clicked();
     void on_pushButtonCheckCost_clicked();
+signals:
+    void tryToBuy();
 private:
     void writeDatagram(QString data);
     QString getChoiceDrink();

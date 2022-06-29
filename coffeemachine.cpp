@@ -16,6 +16,7 @@ CoffeeMachine::CoffeeMachine(QWidget *parent)
     socket = new QUdpSocket(this);
     socket->bind(TO_LISTEN_IP, TO_LISTEN_PORT);
     connect(socket, SIGNAL(readyRead()), this, SLOT(readDatagram()));
+    connect(this, SIGNAL(tryToBuy()), this, SLOT(on_pushButtonBuy_clicked()));
 }
 
 CoffeeMachine::~CoffeeMachine()
@@ -118,11 +119,11 @@ void CoffeeMachine:: readDatagram()
         } else if(stringList.at(0) == CHECK_COMMAND_HEADER) {
             //QString result = "Total cost is " + stringList.at(1);
             //QMessageBox::information(this, "Result of request", result);
-            QMessageBox::StandardButton button = QMessageBox::question(this,
-                                                                       "", "Total cost is " + stringList.at(1) + "\nDo you want to buy?",
+            QMessageBox::StandardButton button = QMessageBox::question(this, "",
+                                                                       "Total cost is " + stringList.at(1) + "\nDo you want to buy?",
                                                                        QMessageBox::Yes | QMessageBox::No );
             if(button == QMessageBox::Yes) {
-
+                emit tryToBuy();
             }
         }
 
